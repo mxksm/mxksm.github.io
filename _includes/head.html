@@ -33,3 +33,49 @@
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css" />
 
 <meta http-equiv="cleartype" content="on" />
+
+<!--
+<style>
+  #theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  body.dark-mode #theme-toggle {
+    background-color: #333333;
+    color: #ffffff;
+  }
+</style>
+
+<button id="theme-toggle">🌙 Dark Mode</button>
+
+<script>
+  const themeToggle = document.getElementById("theme-toggle");
+
+  // Load the user's previous theme preference
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    themeToggle.textContent = "☀️ Light Mode";
+  }
+
+  // Toggle theme on button click
+  themeToggle.addEventListener("click", () => {
+    if (document.body.classList.contains("dark-mode")) {
+      document.body.classList.remove("dark-mode");
+      themeToggle.textContent = "🌙 Dark Mode";
+      localStorage.setItem("theme", "light");
+    } else {
+      document.body.classList.add("dark-mode");
+      themeToggle.textContent = "☀️ Light Mode";
+      localStorage.setItem("theme", "dark");
+    }
+  });
+</script>
+-->
