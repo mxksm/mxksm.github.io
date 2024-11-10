@@ -72,13 +72,17 @@ $border-color: $lighter-gray;
 $body-color: #000;
 $background-color: #2f2f2f;
 $code-background-color: #000;
-
 $code-background-color-dark: $light-gray;
 $text-color: $lighter-gray;
 $border-color: $lighter-gray;
 /* Updated End */
 
+/*
 $primary-color: #7a8288;
+*/
+/* Updated */
+$primary-color: $light-gray;
+/* Updated End */
 $success-color: #62c462;
 $warning-color: #f89406;
 $danger-color: #ee5f5b;
