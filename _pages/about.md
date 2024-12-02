@@ -11,4 +11,4 @@ I am a Computer Science student in Purdue University’s accelerated BS/MS progr
 
 I am primarily interested in machine learning, where I have gained significant practical experience as part of my studies. Additionally, I have recently developed an interest in computer graphics, particularly in the simulation of dynamic elements like water and cloth, an area I am excited to explore further.
 
-[Project]{https://docs.google.com/presentation/d/1eTpQpGTI_Idf27HUK5T_vupN0qHJ7B0BgK4t3yz5lKk/edit?usp=sharing}
+https://docs.google.com/presentation/d/1eTpQpGTI_Idf27HUK5T_vupN0qHJ7B0BgK4t3yz5lKk/edit?usp=sharing
