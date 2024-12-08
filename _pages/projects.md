@@ -16,7 +16,7 @@ This project involved conducting a survey on ensemble methods as part of my grad
 <a> ML Projects </a>
 </h2></article></div>
 
-Though I have not created a repository for this yet, I have worked on implementing various machine learning algorithms and projects over the last few months. These projects include implementing transformers, convolutional neural networks, neural networks, boosted decision trees and more.
+Though I have not created a repository for this, I have worked on implementing various machine learning algorithms and projects over the last few months. These projects include implementing transformers, convolutional neural networks, neural networks, boosted decision trees and more.
 
 <div class="list__item"><article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork"><h2 class="archive__item-title" itemprop="headline">
 <a href="https://github.com/maxinimus/MLEvsMAP" rel="permalink"> MLE vs MAP </a>
