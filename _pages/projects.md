@@ -7,6 +7,12 @@ permalink: /projects/
 <h2 id="2024" class="archive__subtitle">{{ 2024 }}</h2>
 
 <div class="list__item"><article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork"><h2 class="archive__item-title" itemprop="headline">
+<a href="/files/project_report.pdf" rel="permalink"> Grad Class Survey Report </a>
+</h2></article></div>
+
+This project involved conducting a survey on ensemble methods as part of my graduate class. I discuss Random Forests, AdaBoost, and XGBoost, and test their performance on multiple datasets. The report includes a detailed analysis of the results and a comparison of the three ensemble methods.
+
+<div class="list__item"><article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork"><h2 class="archive__item-title" itemprop="headline">
 <a> ML Projects </a>
 </h2></article></div>
 
