@@ -18,12 +18,6 @@ This project involved conducting a survey on ensemble methods as part of my grad
 
 Though I have not created a repository for this, I have worked on implementing various machine learning algorithms and projects over the last few months. These projects include implementing transformers, convolutional neural networks, neural networks, boosted decision trees and more.
 
-<div class="list__item"><article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork"><h2 class="archive__item-title" itemprop="headline">
-<a href="https://github.com/tr1maksim/MLEvsMAP" rel="permalink"> MLE vs MAP </a>
-</h2></article></div>
-
-This project implements simulations to compare the Maximum Likelihood Estimation (MLE) and Maximum A Posteriori (MAP) estimation methods for estimating the bias of a coin based on toss results. The project uses Python for both the calculation of estimations and the visualization of results.
-
 <h2 id="2023" class="archive__subtitle">{{ 2023 }}</h2>
 
 <div class="list__item"><article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork"><h2 class="archive__item-title" itemprop="headline">
