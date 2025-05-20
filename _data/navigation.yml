@@ -20,9 +20,8 @@ main:
   - title: "Projects"
     url: /projects/
 
-  - title: "Blog"
-    url: /posts/
-
+  #  - title: "Blog"
+  #    url: /posts/
   - title: "Resume"
     url: /files/resume.pdf
 
