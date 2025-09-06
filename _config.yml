@@ -8,9 +8,9 @@
 
 # Basic Site Settings
 locale: "en-US"
-title: "Maxim Lavrenko"
+title: "Maksim Lavrenko"
 title_separator: "-"
-name: &name "Maxim Lavrenko"
+name: &name "Maksim Lavrenko"
 description: &description "personal description"
 url: https://mxksm.github.io
 baseurl: "" # the subpath of your site, e.g. "/blog"
@@ -22,7 +22,7 @@ repository: "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar: "me.png"
-  name: "Maxim Lavrenko"
+  name: "Maksim Lavrenko"
   pronouns: # example: "she/her"
   bio: "BS/MS Student in Computer Science"
   location: "West Lafayette, IN"
