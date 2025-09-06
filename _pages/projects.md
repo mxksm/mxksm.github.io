@@ -21,13 +21,13 @@ Though I have not created a repository for this, I have worked on implementing v
 <h2 id="2023" class="archive__subtitle">{{ 2023 }}</h2>
 
 <div class="list__item"><article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork"><h2 class="archive__item-title" itemprop="headline">
-<a href="https://github.com/tr1maksim/better-housing-bot" rel="permalink"> Better Housing Bot </a>
+<a href="https://github.com/mxksm/better-housing-bot" rel="permalink"> Better Housing Bot </a>
 </h2></article></div>
 
 The Purdue Housing Bot is a specialized Discord bot designed to assist Purdue University students in finding available on-campus housing. Utilizing web scraping techniques, this bot provides real-time updates on available dorms and apartments, significantly simplifying the housing search process. This bot was instrumental in helping me and my friends secure on-campus housing, avoiding the need for more expensive off-campus alternatives.
 
 <div class="list__item"><article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork"><h2 class="archive__item-title" itemprop="headline">
-<a href="https://github.com/tr1maksim/LaTeX-Matrix-Calculator" rel="permalink"> Latex Matrix Calculator </a>
+<a href="https://github.com/mxksm/LaTeX-Matrix-Calculator" rel="permalink"> Latex Matrix Calculator </a>
 </h2></article></div>
 
 This is one of my first few projects. It is a simple matrix calculator that accepts latex code of a matrix as input and finds various properties of the matrix such as determinant, inverse, etc, useful if you are doing homework in LaTeX and need to find the inverse of a matrix quickly. It is built using the React framework for the frontend and Flask framework for the backend.
