@@ -7,6 +7,5 @@ redirect_from:
   - /about.html
 ---
 
-I am a Computer Science student in Purdue University’s MS program.
-My main interest lies in theoretical computer science, particularly in computaional topology and topological data analysis.
-
+I am a Computer Science student in Purdue University’s MS program, studying **Topological Data Analysis (TDA)**.
+I am currently most invested in developing algorithms in the context combinatorial dynamical systems.
