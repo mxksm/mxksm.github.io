@@ -23,7 +23,7 @@ main:
   #  - title: "Blog"
   #    url: /posts/
   - title: "Resume"
-    url: /resume
+    url: /files/resume.pdf
 
     #  - title: "Ensemble Methods Survey"
     #    url: /files/project_report.pdf
