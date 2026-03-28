@@ -4,22 +4,19 @@ title: "Projects"
 permalink: /projects/
 ---
 
-<h2 id="2025" class="archive__subtitle">{{ 2025 }}</h2>
-
 <div class="list__item"><article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork"><h2 class="archive__item-title" itemprop="headline">
 <a href="https://github.com/mxksm/scripts" rel="permalink"> Work + Pdf Scripts </a>
 </h2></article></div>
 
-I have worked on my ```work``` script for the last couple years, improving it in ways that I find useful.
-This script makes it possible to create new homework folders with all the templates set up and the homework number updated in a single command.
-All the different features can be seen by running ```work --help```.
-This can be further improved by using native typst templates, although I have not had the time to switch to that yet.
+My most comprehensive automation project is a pair of scripts (```work``` and ```pdf```) built to streamline my coursework pipeline.
+It essentially turns assignment setup into a zero-friction process --- generating the folder, setting up the boilerplate, and updating the homework number all in a single command.
+While it currently handles everything I need, my next goal is to upgrade the system to use native Typst templates for better maintainability.
 
 <div class="list__item"><article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork"><h2 class="archive__item-title" itemprop="headline">
 <a href="https://github.com/mxksm/dotfiles" rel="permalink"> Sioyek + Neovim Configuration </a>
 </h2></article></div>
 
-I use Neovim + Sioyek combination to write all of my latex and typst documents for homeworks and papers and view them.
-Over the time, I have developed multiple personal scripts to help improve workflow.
-For Sioyek, I added scripts to move between pdfs in the same directory in alphabetical order, easy switching of themes, and other quality of life improvements.
-For Neovim, I added features that work nicely in combination with other of my scripts, like ```pdf```, and other related areas.
+If my ```work``` and ```pdf``` scripts act as the high-level scaffolding for my academic workflow, my Neovim and Sioyek setup is the low-level engine.
+They share the exact same goal: creating a zero-friction environment for coursework and papers.
+While the CLI scripts handle the boilerplate and directory management, Neovim is heavily configured to interface seamlessly with those scripts for writing LaTeX and Typst.
+Sioyek acts as the dedicated viewing layer (specifically invoked by the ```pdf``` script), enhanced with custom scripts for alphabetical directory navigation, quick theme switching, and other quality-of-life improvements.
