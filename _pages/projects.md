@@ -8,15 +8,16 @@ permalink: /projects/
 <a href="https://github.com/mxksm/scripts" rel="permalink"> Work + Pdf Scripts </a>
 </h2></article></div>
 
-My most comprehensive automation project is a pair of scripts (```work``` and ```pdf```) built to streamline my coursework pipeline.
-It essentially turns assignment setup into a zero-friction process --- generating the folder, setting up the boilerplate, and updating the homework number all in a single command.
-While it currently handles everything I need, my next goal is to upgrade the system to use native Typst templates for better maintainability.
+My most comprehensive automation project is a custom Python CLI (`work`) built to eliminate the friction of managing academic documents.
+The script separates state-aware scaffolding from environment execution.
+The `init` command generates project folders using Typst's native local package manager, dynamically injecting metadata (like auto-incrementing homework numbers) without relying on regex parsing.
+The decoupled `open` command serves as a universal launcher, instantly opening Neovim, spinning up a background compiler, and managing Sioyek instances for any course assignment or standalone directory for both Typst and Latex projects.
 
 <div class="list__item"><article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork"><h2 class="archive__item-title" itemprop="headline">
 <a href="https://github.com/mxksm/dotfiles" rel="permalink"> Sioyek + Neovim Configuration </a>
 </h2></article></div>
 
-If my ```work``` and ```pdf``` scripts act as the high-level scaffolding for my academic workflow, my Neovim and Sioyek setup is the low-level engine.
-They share the exact same goal: creating a zero-friction environment for coursework and papers.
-While the CLI scripts handle the boilerplate and directory management, Neovim is heavily configured to interface seamlessly with those scripts for writing LaTeX and Typst.
-Sioyek acts as the dedicated viewing layer (specifically invoked by the ```pdf``` script), enhanced with custom scripts for alphabetical directory navigation, quick theme switching, and other quality-of-life improvements.
+If my `work` and `pdf` CLI provides the high-level scaffolding for my academic pipeline, my Neovim and Sioyek configurations form the low-level engine.
+They share a singular goal: creating a zero-friction environment for writing coursework and research papers.
+Neovim is tailored for rapid LaTeX and Typst development, designed to perfectly catch the handoff from the `work open` command.
+Sioyek operates as the dedicated viewing layer, augmented with custom scripts for alphabetical directory navigation, seamless theme switching, and real-time synchronization with the background compiler.
