@@ -20,4 +20,4 @@ The decoupled `open` command serves as a universal launcher, instantly opening N
 If my `work` and `pdf` CLI provides the high-level scaffolding for my academic pipeline, my Neovim and Sioyek configurations form the low-level engine.
 They share a singular goal: creating a zero-friction environment for writing coursework and research papers.
 Neovim is tailored for rapid LaTeX and Typst development, designed to perfectly catch the handoff from the `work open` command.
-Sioyek operates as the dedicated viewing layer, augmented with custom scripts for alphabetical directory navigation, seamless theme switching, and real-time synchronization with the background compiler.
+Sioyek operates as the dedicated viewing layer, augmented with custom scripts for alphabetical directory navigation, seamless theme switching, and more.
