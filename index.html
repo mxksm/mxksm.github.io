@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maksim Lavrenko</title>
+<style>
+  /* * RESET & BASE */
+  :root {
+    --bg: #ffffff;
+    --fg: #000000;
+    --accent: #0000ff; 
+    --border: #000000;
+  }
+  
+  * { 
+    box-sizing: border-box; 
+    border-radius: 0 !important; 
+  }
+  
+  body {
+    font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+    background-color: var(--bg);
+    color: var(--fg);
+    margin: 0; 
+    padding: 2rem;
+    line-height: 1.6;
+  }
+
+  /* * HEADER LAYOUT */
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; 
+    flex-wrap: wrap; 
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h1 { 
+    text-transform: uppercase; 
+    margin: 0; 
+    padding: 0;
+  }
+
+  h2 {
+    text-transform: uppercase; 
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+  }
+
+  a { 
+    color: var(--accent); 
+    text-decoration: none; 
+  }
+  
+  a:hover { 
+    background: var(--fg); 
+    color: var(--bg); 
+  }
+  
+  .container { 
+    max-width: 900px; 
+    margin: 0 auto; 
+  }
+  
+  .section {
+    border: 2px solid var(--border);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 6px 6px 0px var(--border); 
+  }
+
+  .links {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1rem; 
+    font-weight: normal;
+  }
+
+  /* * DIRECTORY / PAPER LISTING */
+  .shelf {
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .book {
+    border: 2px solid var(--border);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    transition: transform 0.1s;
+    background: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .book:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 4px 4px 0px var(--accent);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .book-title {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .book-action {
+    color: var(--accent);
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  /* * THE MODAL */
+  dialog {
+    background: var(--bg);
+    color: var(--fg);
+    border: 3px solid var(--border);
+    padding: 2rem;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 10px 10px 0px var(--border);
+  }
+
+  dialog::backdrop { 
+    background: rgba(0,0,0,0.8); 
+  }
+
+  .dialog-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 1rem; 
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.5rem;
+  }
+
+  .dialog-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  button {
+    background: var(--bg);
+    color: var(--fg);
+    border: 2px solid var(--border);
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: nowrap; 
+  }
+
+  button:hover { 
+    background: var(--fg); 
+    color: var(--bg); 
+  }
+
+  img.paper-preview { 
+    width: 100%; 
+    max-height: 500px; 
+    object-fit: contain; 
+    border: 2px solid var(--border); 
+    margin-bottom: 1rem; 
+    background: var(--bg);
+  }
+
+  .action-btn {
+    display: block;
+    text-align: center;
+    border: 2px solid var(--border);
+    padding: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  
+  <div class="section">
+    <div class="header-row">
+      <h1>Maksim Lavrenko</h1>
+      <div class="links">
+        <span>mlavrenk [at] purdue [dot] edu</span>
+        <a href="https://github.com/mxksm" target="_blank">[ GitHub ]</a>
+      </div>
+    </div>
+    <p>Doing a PhD in computational topology, focusing on Combinatorial Multivector Fields and Multiparameter Persistence.</p>
+  </div>
+
+  <div class="section">
+    <h2>Reading List</h2>
+    <p>Papers and literature I am currently reading or have read.</p>
+    
+    <div class="shelf">
+      
+      <div class="book" onclick="openPaper('arxiv260100209')">
+        <span class="book-title">Limit Computation Over Posets</span>
+        <span class="book-action">[ View ]</span>
+      </div>
+
+      <div class="book" onclick="openPaper('arxiv211115058')">
+        <span class="book-title">Computing Generalized Rank Invariant</span>
+        <span class="book-action">[ View ]</span>
+      </div>
+
+      <div class="book" onclick="openPaper('arxiv250513412')">
+        <span class="book-title">Counts and End-Curves in Two-Parameter Persistence</span>
+        <span class="book-action">[ View ]</span>
+      </div>
+
+      <div class="book" onclick="openPaper('arxiv250408119')">
+        <span class="book-title">Decomposing Multiparameter Persistence Modules</span>
+        <span class="book-action">[ View ]</span>
+      </div>
+
+      <div class="book" onclick="openPaper('arxiv220314289')">
+        <span class="book-title">An Introduction to Multiparameter Persistence</span>
+        <span class="book-action">[ View ]</span>
+      </div>
+
+      <div class="book" onclick="openPaper('arxiv231114364')">
+        <span class="book-title">The Poset of Cancellations in a Filtered Complex</span>
+        <span class="book-action">[ View ]</span>
+      </div>
+
+      <div class="book" onclick="openPaper('arxiv161209375')">
+        <span class="book-title">Basic Category Theory</span>
+        <span class="book-action">[ View ]</span>
+      </div>
+
+      <div class="book" onclick="openPaper('arxiv250219369')">
+        <span class="book-title">Computing a Connection Matrix Efficiently</span>
+        <span class="book-action">[ View ]</span>
+      </div>
+
+      <div class="book" onclick="openPaper('arxiv17105')">
+        <span class="book-title">Conley-Morse Persistence Barcode</span>
+        <span class="book-action">[ View ]</span>
+      </div>
+
+      <div class="book" onclick="openPaper('arxiv220411080')">
+        <span class="book-title">Fast Computation of Zigzag Persistence</span>
+        <span class="book-action">[ View ]</span>
+      </div>
+
+      <div class="book" onclick="openPaper('ctdabook')">
+        <span class="book-title">Computational Topology for Data Analysis</span>
+        <span class="book-action">[ View ]</span>
+      </div>
+
+      <div class="book" onclick="openPaper('arxiv241020565')">
+        <span class="book-title">Fast Algorithm for Computing Zigzag Representatives</span>
+        <span class="book-action">[ View ]</span>
+      </div>
+
+      <div class="book" onclick="openPaper('vineyards')">
+        <span class="book-title">Vineyards: Computing Persistence in Space and Time</span>
+        <span class="book-action">[ View ]</span>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<dialog id="paper-dialog">
+  <div class="dialog-header">
+    <span class="dialog-title" id="modal-title">Paper Title</span>
+    <button onclick="closeModal()">[X]</button>
+  </div>
+  <img id="modal-img" class="paper-preview" src="" alt="First page preview">
+  <a id="modal-link" href="#" target="_blank" class="action-btn">Read Full Paper -></a>
+</dialog>
+
+<script>
+  const papers = {
+    'arxiv17105': {
+      title: 'Conley-Morse persistence barcode: a homological signature of combinatorial bifurcations',
+      image: 'assets/2504.17105.png',
+      link: 'https://arxiv.org/abs/2504.17105'
+    },
+    'arxiv161209375': {
+      title: 'Basic Category Theory',
+      image: 'assets/1612.09375.png',
+      link: 'https://arxiv.org/abs/1612.09375'
+    },
+    'arxiv260100209': {
+      title: 'Limit Computation Over Posets via Minimal Initial Functors',
+      image: 'assets/2601.00209.png',
+      link: 'https://arxiv.org/abs/2601.00209'
+    },
+    'arxiv211115058': {
+      title: 'Computing Generalized Rank Invariant for 2-Parameter Persistence Modules via Zigzag Persistence and its Applications',
+      image: 'assets/2111.15058.png',
+      link: 'https://arxiv.org/abs/2111.15058'
+    },
+    'arxiv250513412': {
+      title: 'Counts and end-curves in two-parameter persistence',
+      image: 'assets/2505.13412.png',
+      link: 'https://arxiv.org/abs/2505.13412'
+    },
+    'arxiv231114364': {
+      title: 'The Poset of Cancellations in a Filtered Complex',
+      image: 'assets/2311.14364.png',
+      link: 'https://arxiv.org/abs/2311.14364'
+    },
+    'arxiv250219369': {
+      title: 'Computing a Connection Matrix and Persistence Efficiently from a Morse Decomposition',
+      image: 'assets/2502.19369.png',
+      link: 'https://arxiv.org/abs/2502.19369'
+    },
+    'arxiv250408119': {
+      title: 'Decomposing Multiparameter Persistence Modules',
+      image: 'assets/2504.08119.png',
+      link: 'https://arxiv.org/abs/2504.08119'
+    },
+    'arxiv220314289': {
+      title: 'An Introduction to Multiparameter Persistence',
+      image: 'assets/2203.14289.png',
+      link: 'https://arxiv.org/abs/2203.14289'
+    },
+    'arxiv220411080': {
+      title: 'Fast Computation of Zigzag Persistence',
+      image: 'assets/2204.11080.png',
+      link: 'https://arxiv.org/abs/2204.11080'
+    },
+    'ctdabook': {
+      title: 'Computational Topology for Data Analysis',
+      image: 'assets/CTDAbook.png',
+      link: 'https://www.cs.purdue.edu/homes/tamaldey/book/CTDAbook/CTDAbook.pdf'
+    },
+    'arxiv241020565': {
+      title: 'A Fast Algorithm for Computing Zigzag Representatives',
+      image: 'assets/2410.20565.png',
+      link: 'https://arxiv.org/abs/2410.20565'
+    },
+    'vineyards': {
+      title: 'Vineyards: Computing Persistence in Space and Time',
+      image: 'assets/vineyards.png',
+      link: 'https://www.mrzv.org/publications/vineyards/socg06/'
+    }
+  };
+
+  const dialog = document.getElementById('paper-dialog');
+
+  function openPaper(id) {
+    const data = papers[id];
+    document.getElementById('modal-title').innerText = data.title;
+    document.getElementById('modal-img').src = data.image;
+    document.getElementById('modal-link').href = data.link;
+    
+    dialog.showModal(); 
+  }
+
+  function closeModal() {
+    dialog.close();
+  }
+
+  // Close modal if clicking outside the box
+  dialog.addEventListener('click', (e) => {
+    const dialogDimensions = dialog.getBoundingClientRect()
+    if (
+      e.clientX < dialogDimensions.left ||
+      e.clientX > dialogDimensions.right ||
+      e.clientY < dialogDimensions.top ||
+      e.clientY > dialogDimensions.bottom
+    ) {
+      dialog.close();
+    }
+  });
+</script>
+
+</body>
+</html>
